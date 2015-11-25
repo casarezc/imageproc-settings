@@ -56,4 +56,7 @@
 #define RIGHT_2_TIH_CHAN     4       //tiH module index is 1-4
 #define AMS_ENC_OFFSET_3     0
 
+// Encoder number definition
+#define NUM_ENC 4
+
 #endif //_SETTINGS_H
