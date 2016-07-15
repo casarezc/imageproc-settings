@@ -1,50 +1,50 @@
-/*
- * Settings
+/* 
+ * File:   settings.h
+ * Author: ronf
  *
- * created on 2012-5-14 by fgb (derived from or_const.h by apullin)
+ * Created on December 24, 2014, 3:39 PM
  */
 
-#ifndef __SETTINGS_H
-#define __SETTINGS_H
+#ifndef SETTINGS_H
+#define	SETTINGS_H
 
-#define IDENT_STR "BIOMIMETICS-ROACH;AMS-ENC;"
+#define IDENT_STR "BIOMIMETICS-ROACH;TACTILE;"
 
-/////// Radio settings ///////
-/////// Radio settings ///////
-#define RADIO_CHANNEL       0x11
-#define RADIO_PAN_ID        0x2160
-#define RADIO_SRC_ADDR      0x2163
+#define ROWS 1
+#define COLS 8  /* for Josh Skin Proc */
 
+#ifdef	__cplusplus
+extern "C" {
+#endif
+
+#define RONF
+// ronf robot radio addresses
+#ifdef RONF
+#define RADIO_MY_CHAN 0x13
+#define RADIO_CHANNEL 0x13 // to work with either style of channel name
+#define RADIO_PAN_ID 0x2060
+//Hard code in destination address (basestation) for now, update to be dynamic later
+#define RADIO_DST_ADDR 0x2011
+#define RADIO_DEST_ADDR RADIO_DST_ADDR
+#define RADIO_SRC_ADDR 0x2052
+#endif
 
 #define RADIO_TXPQ_MAX_SIZE   10
 #define RADIO_RXPQ_MAX_SIZE   10
+
 
 //Telemetry type setup
 #define TELEM_TYPE vrTelemStruct_t
 #define TELEM_INCLUDE "vr_telem.h"
 #define TELEMPACKFUNC(x) vrTelemGetData(x)
 
-// Encoders Setup
-//Left legs
-#define LEFT_LEGS_PID_NUM       0       //PID module index is 0-3
-#define LEFT_LEGS_ENC_NUM       0       //amsEnc module index is 0-3
-#define AMS_ENC_OFFSET_0        15416
-#define LEFT_LEGS_ENC_FLIP      0       //"forward" reversed for left
-#define LEFT_LEGS_PWM_FLIP      0
-#define LEFT_LEGS_TIH_CHAN      1       //tiH module index is 1-4
-//Right legs
-#define RIGHT_LEGS_PID_NUM      1       //PID module index is 0-3
-#define RIGHT_LEGS_ENC_NUM      1       //amsEnc module index is 0-3
-#define AMS_ENC_OFFSET_1        2920
-#define RIGHT_LEGS_ENC_FLIP     1       //"forward" regular for right
-#define RIGHT_LEGS_PWM_FLIP     0
-#define RIGHT_LEGS_TIH_CHAN     2       //tiH module index is 1-4
+    // specific to robot
+#define AMS_ENC_OFFSET_0 0
+#define AMS_ENC_OFFSET_1 0
 
-#define WINCH_PI_NUM            0
-#define WINCH_PWM_FLIP          0
-#define WINCH_TIH_CHAN          3
+#ifdef	__cplusplus
+}
+#endif
 
-// Encoder number definition
-#define NUM_ENC 2
 
-#endif //_SETTINGS_H
+#endif	/* SETTINGS_H */
