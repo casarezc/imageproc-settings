@@ -39,8 +39,8 @@ extern "C" {
 #define TELEMPACKFUNC(x) vrTelemGetData(x)
 
     // specific to robot
-#define AMS_ENC_OFFSET_0 0
-#define AMS_ENC_OFFSET_1 0
+#define AMS_ENC_OFFSET_0 11467
+#define AMS_ENC_OFFSET_1 112
 
 #ifdef	__cplusplus
 }
