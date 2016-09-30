@@ -30,7 +30,7 @@
 #define LEFT_1_ENC_FLIP      0       //"forward" normal for left
 #define LEFT_1_PWM_FLIP      0
 #define LEFT_1_TIH_CHAN      1       //tiH module index is 1-4
-#define AMS_ENC_OFFSET_0     5615
+#define AMS_ENC_OFFSET_0     5843
 
 //Right legs robot 1
 #define RIGHT_1_PID_NUM      1       //PID module index is 0-3
@@ -38,7 +38,7 @@
 #define RIGHT_1_ENC_FLIP     1       //"forward" reversed for right
 #define RIGHT_1_PWM_FLIP     0
 #define RIGHT_1_TIH_CHAN     2       //tiH module index is 1-4
-#define AMS_ENC_OFFSET_1     10774
+#define AMS_ENC_OFFSET_1     10613
 
 //Left legs robot 2
 #define LEFT_2_PID_NUM       2       //PID module index is 0-3
