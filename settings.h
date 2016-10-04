@@ -35,7 +35,7 @@
 //Right legs
 #define RIGHT_LEGS_PID_NUM      1       //PID module index is 0-3
 #define RIGHT_LEGS_ENC_NUM      1       //amsEnc module index is 0-3
-#define AMS_ENC_OFFSET_1        5712
+#define AMS_ENC_OFFSET_1        1748
 #define RIGHT_LEGS_ENC_FLIP     1       //"forward" regular for right
 #define RIGHT_LEGS_PWM_FLIP     1
 #define RIGHT_LEGS_TIH_CHAN     2       //tiH module index is 1-4
