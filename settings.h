@@ -7,7 +7,7 @@
 #ifndef __SETTINGS_H
 #define __SETTINGS_H
 
-#define IDENT_STR "BIOMIMETICS-ROACH;AMS-ENC;"
+#define IDENT_STR "CASAREZC-ROACH;MODTRANS;"
 
 /////// Radio settings ///////
 /////// Radio settings ///////
@@ -27,24 +27,25 @@
 // Encoders Setup
 //Left legs
 #define LEFT_LEGS_PID_NUM       0       //PID module index is 0-3
-#define LEFT_LEGS_ENC_NUM       0       //amsEnc module index is 0-3
-#define AMS_ENC_OFFSET_0        15416
+#define LEFT_LEGS_ENC_NUM       1       //amsEnc module index is 0-3
+#define AMS_ENC_OFFSET_0        0
 #define LEFT_LEGS_ENC_FLIP      0       //"forward" reversed for left
 #define LEFT_LEGS_PWM_FLIP      0
 #define LEFT_LEGS_TIH_CHAN      1       //tiH module index is 1-4
 //Right legs
 #define RIGHT_LEGS_PID_NUM      1       //PID module index is 0-3
-#define RIGHT_LEGS_ENC_NUM      1       //amsEnc module index is 0-3
-#define AMS_ENC_OFFSET_1        2920
-#define RIGHT_LEGS_ENC_FLIP     1       //"forward" regular for right
+#define RIGHT_LEGS_ENC_NUM      0       //amsEnc module index is 0-3
+#define AMS_ENC_OFFSET_1        0
+#define RIGHT_LEGS_ENC_FLIP     0       //"forward" regular for right
 #define RIGHT_LEGS_PWM_FLIP     0
 #define RIGHT_LEGS_TIH_CHAN     2       //tiH module index is 1-4
 
-#define WINCH_PI_NUM            0
-#define WINCH_PWM_FLIP          0
-#define WINCH_TIH_CHAN          3
-
+//TAIL
+#define TAIL_ENC_NUM      2       //amsEnc module index is 0-3
+#define TAIL_ENC_FLIP     0
+#define TAIL_PWM_FLIP     0
+#define TAIL_TIH_CHAN     3       //tiH module index is 1-4
 // Encoder number definition
-#define NUM_ENC 2
+#define NUM_ENC 3
 
 #endif //_SETTINGS_H
