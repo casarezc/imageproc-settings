@@ -48,4 +48,7 @@
 // Encoder number definition
 #define NUM_ENC 3
 
+//Tail zero sensor port
+#define TAIL_ZERO   _RB3
+
 #endif //_SETTINGS_H
