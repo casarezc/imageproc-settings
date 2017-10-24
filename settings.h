@@ -40,12 +40,15 @@
 #define RIGHT_LEGS_PWM_FLIP     1
 #define RIGHT_LEGS_TIH_CHAN     2       //tiH module index is 1-4
 
-//TAIL
+//Tail
 #define TAIL_ENC_NUM      2       //amsEnc module index is 0-3
 #define TAIL_ENC_FLIP     0
 #define TAIL_PWM_FLIP     0
 #define TAIL_TIH_CHAN     3       //tiH module index is 1-4
 // Encoder number definition
 #define NUM_ENC 3
+
+//Tail zero sensor port
+#define TAIL_ZERO   _RB3
 
 #endif //_SETTINGS_H
