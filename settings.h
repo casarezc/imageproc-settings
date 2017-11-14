@@ -52,7 +52,7 @@
 #define TAIL_ZERO_INPUT   _RB3
 
 //Tail zero values
-#define TAIL_ZERO_POS 4088
-#define TAIL_ZERO_NEG -6501
+#define TAIL_ZERO_POS 4519
+#define TAIL_ZERO_NEG -6269
 
 #endif //_SETTINGS_H
